@@ -15,7 +15,7 @@
 		 },false);//resume
 	 document.addEventLister("online",function(){
 		 escribehistoria ('la app se conecto a la red');
-		 },false);//pause
+		 },false);//se conecto
 	 document.addEventLister("offline",function(){
 		 escribehistoria ('la app se desconecto de la red');
 		 },false);//se desconecto
@@ -27,7 +27,7 @@
 		 });//document
 		 
 		 function escribehistoria(accion){
-			 $('#eHistoria').append('<li>'+'</li>');
+			 $('#eHistoria').append('<li>'+accion+'</li>');
 		 }
 		 
 		 
